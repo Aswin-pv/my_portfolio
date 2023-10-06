@@ -203,6 +203,8 @@
 }
 @media (max-width:793px){
 
+    /* SECTION-1 */
+
     .section {
         display: flex;
         justify-content: space-around;
@@ -217,13 +219,64 @@
         display: flex;
         flex-direction: column;
         background-color:var(--card-color) ;
-        padding: 3rem;
+        padding: 1rem;
         border-radius: 10px;
         border-left: 8px solid var(--secondary-color);
     }
+    /* LEFT SECTION DETAILS */
+
+    .left-section .detail-section{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+
+    .left-section .detail-section .name-span{
+        color: var(--secondary-color);
+    }
+    .left-section .detail-section h3{
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: var(--faded-color);
+    }
+    .left-section .detail-section h6{
+        font-weight: 200;
+        font-size: 1rem;
+        color: var(--faded-color);
+    }
+
+    .left-section .resume-btn button{
+        padding: .5rem;
+        border: none;
+        border-radius: 10px;
+        background: var(--btn-color);
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .left-section .resume-btn button{
+        margin-top: 0;
+    }
+
+    .left-section .resume-btn button:hover{
+        padding: .5rem;
+        border: none;
+        border-radius: 10px;
+        background: var(--btn-hover);
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        transform: scale(1.05);
+    }
+    
 
     .right-section{
         margin-bottom: 2rem;
+
     }
 
     .section-2 .skills .left-skills{
@@ -263,13 +316,124 @@
         color: var(--text-color);
         cursor: pointer;
     }
+
+    /* CONTACT_SECTION */
+
+    .section-4 .contact-section .contact-form .message h6{
+        font-weight: 100;
+        font-size: 3rem;
+        background-color: var(--faded-color);
+        
+    }
+    .section-4 .contact-section .contact-form .message h2{
+        font-weight: 750;
+        font-size: 3rem;
+        color: var(--secondary-color);
+    }
+
+
+
+
+    /* HAMBURGER MENU */
+
+    .header .navigation .toggle{
+        display: block;
+    }
+
+    .header .navigation .nav-link {
+        display: none;
+        width: 100%;
+        
+    }
+
+    .header .navigation .nav-link.is-active{
+        display: block;
+        text-align: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 20px;
+        z-index: 2;
+    }
+
+    .navigation .nav-link li{
+        padding: 1rem;
+    }
+
+
 }
 
 
 @media (max-width:480px){
 
+    /* SECTION */
+
+    .right-section .image img {
+        height: 267px;
+        width: 209px;
+        border-radius: 50%;
+  
+    }
+
+    /* SECTION-1 */
+
+    .section-2 .skills .right-skills {
+        background: var(--bg-radial-black);
+        border-radius: 10px;
+        height: 300px;
+        width: 202px;
+        padding: 2rem;
+        color: var(--faded-color);
+    }
+
+    .section-2 .skills .left-skills {
+        background: var(--bg-radial-black);
+        margin: 1rem;
+        height: 300px;
+        width: 204px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .section-2 .skills .left-skills .skill-table {
+        text-align: center;
+        height: 171px;
+        width: 148px;
+        margin: 2rem;
+    }
+    
+
+    /* CONTACT-SECTION */
+    .contact-me .contact-info h1{
+        font-size: 1rem;
+    }
+
+    /* ABOUT_SECTION */
+
+    .about-section .about {
+        min-height: 200px;
+        background-color: var(--card-color);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .about-section .about h1 {
+        text-align: left;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+
+    /* PROjECT-SECTION */
+    .section-3 .project-head h1 {
+        font-weight: bolder;
+        font-size: 45px;
+    }
+
 
 }
-@media (max-width:320px){
+@media (max-width:390px){
 
 }
