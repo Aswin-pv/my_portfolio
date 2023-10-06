@@ -1,0 +1,13 @@
+@keyframes logo{
+    0%{
+        transform:  translateX(-800px);
+    }
+    
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(800px);
+    }
+}
+

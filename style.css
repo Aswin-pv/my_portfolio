@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #000000;
+    --primary-color:#501372;
+    --text-color:#fff;
+    --secondary-color:#923bc2;
+    --card-color:#121414;
+    --faded-color:#757575;
+    --btn-color:linear-gradient(0deg, rgba(47,34,195,1) 0%, rgba(210,8,223,1) 100%);
+    --btn-hover:linear-gradient(0deg, rgb(117, 37, 144) 0%, rgba(210,8,223,1) 100%);
+    --bg-radial: radial-gradient(circle, rgba(139,57,177,1) 0%, rgba(50,14,71,1) 98%);
+    --bg-radial-black:radial-gradient(circle, rgba(74,64,78,1) 0%, rgba(18,7,25,1) 98%);
+}
+
+/* HEADER PART */
+
+.header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    overflow: hidden;
+    border-bottom: 3px solid var(--primary-color);
+    position: fixed;
+    top:0px;
+}
+
+
+
+.header .navigation .nav-link {
+    display: flex;
+    margin:auto ;
+}
+
+.navigation .nav-link li {
+    padding: 0 1.5rem;
+    list-style-type: none;
+}
+
+.navigation .nav-link li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation .nav-link li a:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* SECTION PART */
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 8rem; 
+    margin-top: 2rem;
+}
+
+/* LEFT SECTION */
+
+.section .left-section {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--card-color) ;
+    padding: 4rem;
+    border-radius: 10px;
+    border-left: 8px solid var(--secondary-color);
+}
+
+/* LEFT SECTION DETAILS */
+
+.left-section .detail-section{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.left-section .detail-section .name-span{
+    color: var(--secondary-color);
+}
+.left-section .detail-section h3{
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--faded-color);
+}
+.left-section .detail-section h6{
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--faded-color);
+}
+
+
+/* LEFT SECTION LOGO */
+
+.left-section .logo .logo-list{
+    display: flex;
+    padding: 1rem 0;
+    color: var(--faded-color);
+    list-style-type: none;
+}
+
+
+.left-section .logo .logo-list li{
+   list-style-type: none;
+   padding: 0 40px 0 0;
+}
+
+.left-section .logo .logo-list li:hover{
+   list-style-type: none;
+   transform: scale(1.1);
+}
+
+.left-section .logo .logo-list li a{
+    color: var(--faded-color);
+    text-decoration: none;
+}
+
+.left-section .logo .logo-list li a:hover{
+    color: var(--text-color);
+    text-decoration: none;
+    
+}
+
+/* LEFT SECTION BUTTON */
+
+
+.left-section .resume-btn button{
+    margin-top: 50px;
+}
+.left-section .resume-btn button{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.left-section .resume-btn button:hover{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-hover);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transform: scale(1.05);
+}
+
+
+/* RIGHT SECTION */
+
+.right-section{
+    padding-right: 2rem;
+}
+
+
+.right-section .image img {
+    height: 439px;
+    width: 372px;
+    border-radius: 50%;
+    
+}
+
+.right-section .image{
+    background-color: var(--secondary-color);
+    border-radius: 70%;
+}
+
+/* SECTION 2 */
+
+.section-2{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    border-top:2px solid var(--faded-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--faded-color);
+}
+
+.section-2 .skills .skill-head h1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.section-2 .skills .skill-head{
+    padding: 0 0 0 2rem;
+}
+
+
+.section-2 .skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-radial);
+    padding: 5rem;
+}
+
+.section-2 .skills .left-skills{
+    background: var(--bg-radial-black);
+    margin: 1rem;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.section-2 .skills .left-skills .skill-table{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+.left-skills .skill-table tr td img{
+    height: 31px;
+    width: 35px;
+}
+
+
+/* RIGHT SKILLS SECTION */
+
+
+.section-2 .skills .right-skills{
+    background: var(--bg-radial-black);
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    padding: 3rem;
+    color: var(--faded-color);
+}
+
+.section-2 .skills .right-skills:hover{
+    background: var(--bg-radial-black);
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    padding: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.right-skills h1{
+    padding: 1rem;
+}
+
+.right-skills .education{
+    padding: 1rem;
+}
+.right-skills .education .education-list li:nth-child(odd){
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem;
+}
+.right-skills .education .education-list li:nth-child(even){
+    list-style-type: none;
+    margin-right: 4rem;
+}
+
+
+/* SECTION 3 */
+
+.section-3{
+    min-height: 100vh;
+    border-bottom: 1px solid var(--faded-color);
+}
+
+/* HEADING OF SECTION_3 */
+
+.section-3 .project-head{
+    width:100%;
+    padding: 6rem;
+    
+}
+.section-3 .project-head h1{
+   font-weight: bolder;
+   font-size: 60px;
+
+}
+
+/* SECTION-3 CARD */
+
+.section-3 .card-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+
+.section-3 .card-section .project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 2rem;
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+.section-3 .card-section .project-card:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 2rem;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+}
+
+.section-3 .card-section .project-card .project-image{
+
+    height: 300px;
+    width: 200px;
+    background: url(images/pexels-olena-bohovyk-18468855.jpg);
+    background-size: cover;
+}
+
+.section-3 .card-section .project-card h3{
+    margin: 1rem 0;
+}
+
+/* SECTION-3 BUTTON */
+
+.project-card .project-view-btn{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.project-card .project-view-btn a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contact-form .form-page form .form-btn button:hover{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-hover);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    
+}
+
+
+/* SECTION-4 */
+
+.section-4{
+    min-height: 100vh;
+    padding: 5rem;
+}
+
+/* CONTACT-SECTION */
+
+.section-4 .contact-section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* LEFT-SECTION */
+
+.section-4 .contact-section .contact-form .message h6{
+    font-weight: 100;
+    font-size: 5rem;
+    background-color: var(--faded-color);
+    
+}
+.section-4 .contact-section .contact-form .message h2{
+    font-weight: 750;
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+/* FORM_SECTION */
+
+.contact-form .form-page form input{
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 5px solid var(--secondary-color);
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.contact-form .form-page form input:focus{
+    outline: none;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 5px solid var(--secondary-color);
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.contact-form .form-page form .form-btn{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contact-form .form-page form .form-btn button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.contact-form .form-page form .form-btn button:hover{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-hover);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transform: scale(1.05);
+}
+
+/* RIGHT_SECTION */
+
+.section-4 .contact-section .contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-4 .contact-section .contact-me .contact-info{
+    margin: 1rem;
+    padding: 0.5rem;
+    line-height: 2rem;
+    color: var(--faded-color);
+}
+.section-4 .contact-section .contact-me .contact-info h3{
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.contact-logo .contact-logo-list{
+    list-style-type: none;
+    display: flex;
+    padding: 1.5rem;
+}
+
+.contact-logo .contact-logo-list li a{
+    text-decoration: none;
+    color: var(--faded-color);
+    margin: 0 2rem 0 0;
+}
+
+.contact-logo .contact-logo-list li a:hover{
+    text-decoration: none;
+    color: var(--faded-color);
+    margin: 0 2rem 0 0;
+    color: var(--text-color);
+}
+
+/* ABOUT-SECTION */
+
+.about-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.about-section .about{
+    min-height: 200px;
+    background-color: var(--card-color);
+    padding: 5rem;
+    border-radius: 10px;
+}
+.about-section .about h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+.about-section .about p{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
